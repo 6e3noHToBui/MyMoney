@@ -1,0 +1,34 @@
+.wallet-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .wallets-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .wallet-item {
+    cursor: pointer;
+    width: calc(15% - 16px);
+    margin: 8px;
+  }
+  
+  .wallet-border {
+    border: 5px solid #e13030;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center text horizontally */
+    justify-content: center;  /* Center text vertically */
+  }
+  
+  .wallet-title {
+    margin-bottom: 8px;  /* Add some space below the title */
+  }
+  .creating-wallet {
+    background-color: #f0f0f0; /* или любой другой цвет, указывающий на активное состояние создания кошелька */
+  }

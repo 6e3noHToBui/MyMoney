@@ -1,0 +1,67 @@
+.wallet-form{
+    .users-in-wallet {
+        li {
+            width: 320px;
+          font-size: 20px;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+      
+          button {
+            margin-left: auto;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+      
+            &:hover {
+              background-color: #2c3e50;
+            }
+          }
+        }
+      }
+    .modal-content{
+        background: #FCF6F9;
+        border: 2px solid #FFFFFF;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;                 
+
+      padding: 15px;
+      position: fixed;
+      top: 35%;
+    }
+    
+    label{
+        font-size: 25px;
+        font-weight: 500;
+   
+    }
+    input{
+        font-family: inherit;
+        font-size: inherit;
+        outline: none;
+        border: none;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        background: transparent;
+        resize: none;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+        color: rgba(0,0,0, 0.9);
+        
+        &::placeholder{
+            color: rgba(0,0,0, 0.4);
+        }
+    }
+    .users-container{
+        ul{
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

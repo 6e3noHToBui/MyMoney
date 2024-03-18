@@ -1,0 +1,12 @@
+.button-component{
+    outline: none;
+    border: 2px;
+    background-color:rgb(44, 62, 80);
+    font-family: inherit;
+    font-size: inherit;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+};

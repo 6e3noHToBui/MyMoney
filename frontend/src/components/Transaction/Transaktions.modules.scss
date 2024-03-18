@@ -1,0 +1,38 @@
+.transaction-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @media (max-width: 1000px) {
+        width: 510px;
+    }
+    h2 {
+        margin-bottom: 10px;
+    }
+    .history-item {
+        background: #9dc8e4;
+        border: 2px solid #ffffff;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+        padding: 1rem;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .history-content {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            .title {
+                margin-right: 10px;
+            }
+        }
+
+        .expense-image {
+            overflow: hidden;
+            margin-top: 10px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

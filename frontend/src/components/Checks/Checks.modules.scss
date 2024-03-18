@@ -1,0 +1,176 @@
+.popupContainer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background: #F0ECE5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+}
+
+.input-control {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+
+    span {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+        font-size: 14px;
+        vertical-align: middle;
+        color: #fff;
+        text-align: center;
+        border-radius: 10px;
+        background: #2c3e50;
+        line-height: 22px;
+        height: 40px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border: none;
+        margin: 0;
+        transition: background-color 0.2s;
+    }
+}
+
+input[type='file'] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 90%;
+    height: 90%;
+}
+
+.popup-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    color: black;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.paragon-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.paragon-grid {
+    margin: 10px 50px;  
+    background-color: rgb(182, 187, 196);
+    width: 80vw;
+    height: 600px;
+    border: 2px solid #FFF;
+    border-radius: 50px;
+    padding: 40px 30px;
+    overflow: auto;
+    margin-top: 20px;
+    
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    @media only screen and (max-width: 1285px) {
+        grid-template-columns: repeat(4, 1fr);
+        height: auto; 
+    }
+
+    @media only screen and (max-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        height: auto; 
+    }
+
+    @media only screen and (max-width: 815px) {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        padding: 5rem;
+    }
+
+    @media only screen and (max-width: 513px) {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        padding: 3rem;
+    }
+    
+
+    &::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 6px;
+        border: 3px solid transparent;
+    }
+}
+
+.paragon {
+    flex: 0 0 calc(10% - 20px);
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.add-paragon {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check-detail-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 600px;
+  }
+  
+  .close-check-detail-x {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    color: #3cc103;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
